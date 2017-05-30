@@ -7,10 +7,10 @@ import { FormsModule }   from '@angular/forms'; // <-- NgModel lives here
 
 
 import { HeroDetailComponent } from './hero/hero-detail.component';
-
+import { MainContainerComponent } from './main-container/main-container.component';
 @NgModule({
   imports:      [ BrowserModule, HttpModule, FormsModule ],
-  declarations: [ AppComponent, HeroDetailComponent ],
+  declarations: [ AppComponent, HeroDetailComponent, MainContainerComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

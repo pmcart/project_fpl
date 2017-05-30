@@ -14,13 +14,14 @@ var app_component_1 = require('./app.component');
 var http_1 = require('@angular/http');
 var forms_1 = require('@angular/forms'); // <-- NgModel lives here
 var hero_detail_component_1 = require('./hero/hero-detail.component');
+var main_container_component_1 = require('./main-container/main-container.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent, hero_detail_component_1.HeroDetailComponent],
+            declarations: [app_component_1.AppComponent, hero_detail_component_1.HeroDetailComponent, main_container_component_1.MainContainerComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

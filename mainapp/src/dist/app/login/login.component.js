@@ -9,18 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var MainContainerComponent = (function () {
-    function MainContainerComponent() {
+var LoginComponent = (function () {
+    function LoginComponent() {
     }
-    MainContainerComponent = __decorate([
+    LoginComponent = __decorate([
         core_1.Component({
-            selector: 'maincontainer',
-            styleUrls: ['app/main-container/main-container.css'],
-            template: "\n    <div class='container container-bg-blue'>\n    <header></header>\n      <router-outlet></router-outlet>\n    </div>\n  "
+            selector: 'location-display',
+            template: "\n    <h1 [routerLink]=\"['/main']\" >Login</h1>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], MainContainerComponent);
-    return MainContainerComponent;
+    ], LoginComponent);
+    return LoginComponent;
 }());
-exports.MainContainerComponent = MainContainerComponent;
-//# sourceMappingURL=main-container.component.js.map
+exports.LoginComponent = LoginComponent;
+//# sourceMappingURL=login.component.js.map

@@ -6,7 +6,6 @@ import {Component} from '@angular/core';
   template: `
     <maincontainer></maincontainer>
   `
-  //styleUrls: ['../node_modules/bootstrap/dist/css/bootstrap.min.css']
 })
 export class AppComponent {
   

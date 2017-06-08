@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var MainContainerComponent = (function () {
-    function MainContainerComponent() {
+var mock_1 = require('./mock');
+var LocationService = (function () {
+    function LocationService() {
     }
-    MainContainerComponent = __decorate([
-        core_1.Component({
-            selector: 'maincontainer',
-            styleUrls: ['app/main-container/main-container.css'],
-            template: "\n    <div class='container container-bg-blue'>\n    <header></header>\n      <router-outlet></router-outlet>\n    </div>\n  "
-        }), 
+    LocationService.prototype.getLocations = function () {
+        return Promise.resolve(mock_1.LOCATIONS);
+    };
+    LocationService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], MainContainerComponent);
-    return MainContainerComponent;
+    ], LocationService);
+    return LocationService;
 }());
-exports.MainContainerComponent = MainContainerComponent;
-//# sourceMappingURL=main-container.component.js.map
+exports.LocationService = LocationService;
+//# sourceMappingURL=location.service.js.map

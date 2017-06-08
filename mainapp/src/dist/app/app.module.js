@@ -10,18 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var http_1 = require('@angular/http');
 var forms_1 = require('@angular/forms'); // <-- NgModel lives here
-var hero_detail_component_1 = require('./hero/hero-detail.component');
 var main_container_component_1 = require('./main-container/main-container.component');
+var header_component_1 = require('./header/header.component');
+var login_component_1 = require('./login/login.component');
+var location_display_component_1 = require('./location/location-display.component');
+var routes_1 = require('./routes');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent, hero_detail_component_1.HeroDetailComponent, main_container_component_1.MainContainerComponent],
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule, router_1.RouterModule.forRoot(routes_1.appRoutes)],
+            declarations: [app_component_1.AppComponent, main_container_component_1.MainContainerComponent, header_component_1.HeaderComponent, login_component_1.LoginComponent, location_display_component_1.LocationDisplayComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

@@ -1,8 +1,8 @@
 import {
-  Hero
-} from './hero';
+  Location
+} from './location';
 
-export const HEROES: Hero[] = [{
+export const LOCATIONS: Location[] = [{
     id: 11,
     name: 'Mr. Nice'
   },

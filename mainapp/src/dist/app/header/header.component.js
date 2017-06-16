@@ -9,15 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var HeaderComponent = (function () {
-    function HeaderComponent() {
+    function HeaderComponent(router) {
+        this.router = router;
     }
+    HeaderComponent.prototype.doSomething = function () {
+        this.router.navigate(['/main']);
+    };
     HeaderComponent = __decorate([
         core_1.Component({
             selector: 'header',
-            template: "\n    <div class='row'>\n          <div class='col-md-12 text-center'>\n            <h1>Locations Header</h1>\n            </div>\n        </div>\n  "
+            template: "\n    <div class='row'>\n          <div class='col-md-12 text-center'>\n            <h1 (click)=\"doSomething()\">Locations Header</h1>\n            </div>\n        </div>\n  "
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], HeaderComponent);
     return HeaderComponent;
 }());

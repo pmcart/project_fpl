@@ -15,7 +15,7 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         core_1.Component({
             selector: 'location-display',
-            template: "\n    <h1 [routerLink]=\"['/main']\" >Login</h1>\n  "
+            template: "\n  <div class='row'>\n  <div class='col-md-4 offset-md-4'>\n    <form class=\"form-signin\">\n        <h2 class=\"form-signin-heading\">Please sign in</h2>\n        <label for=\"inputEmail\" class=\"sr-only\">Email address</label>\n        <input type=\"email\" id=\"inputEmail\" class=\"form-control\" placeholder=\"Email address\" required=\"\" autofocus=\"\">\n        <label for=\"inputPassword\" class=\"sr-only\">Password</label>\n        <input type=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required=\"\">\n        <div class=\"checkbox\">\n          <label>\n            <input type=\"checkbox\" value=\"remember-me\"> Remember me\n          </label>\n        </div>\n        <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\" [routerLink]=\"['/main']\">Sign in</button>\n      </form>\n      </div>\n        </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], LoginComponent);
